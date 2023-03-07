@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaires des Etudiants</title>
-
+ <style>
+       .main {
+               position: absolute; /*or fixed*/
+               width: 50%;
+               height: 300px;
+               left: 50%;
+               top: 100px;
+               margin: 0 0 0 -25%;
+             }
+    </style>
   </head>
   <body>
+  <div class="main">
     <fieldset>
       <legend>Information personnelles</legend>
       <form action="TP2_show_data.jsp" method="post">
@@ -36,5 +46,6 @@
         <input type="reset" value="Annuler" />
       </form>
     </fieldset>
+    </div>
   </body>
 </html>

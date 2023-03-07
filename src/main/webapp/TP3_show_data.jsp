@@ -19,7 +19,12 @@ int nb1,nb2;%>
      case '+':out.print("La somme : "+nb1+" et "+nb2+" est "+(result=nb1+nb2)) ; break;
      case '*':out.print(" La multiplication  : "+nb1+" et "+nb2+" est "+(result=nb1*nb2)) ;  break;
      case '-':out.print(" La soustraction : "+nb1+" et "+nb2+" est "+(result=nb1-nb2)) ;   break;
-     case '/':out.print("La division : "+nb1+" et "+nb2+" est "+(result=nb1/nb2)) ;  ;break;
+     case '/':
+     if(nb2==0){out.print("La division : "+nb1+" et "+nb2+" est division imposible ");
+     }else{
+     out.print("La division : "+nb1+" et "+nb2+" est "+(result=nb1/nb2)) ;
+     }
+     break;
      default: out.print("choisis une operation ??"+"<br><a href='TP3.jsp'>RETOUR</a>");
      }
  %>

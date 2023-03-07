@@ -17,15 +17,16 @@
         <input type="radio" name="sexe" value="Female" />F
         <input type="radio" name="sexe" value="Male" />M <br /><br />
         <label for="lng">Langues</label>
-        <input type="checkbox" name="lng" value="Arabe" checked/>Ar
+        <input type="checkbox" name="lng" value="Arabe" />Ar
         <input type="checkbox" name="lng"  value="Francais"/>Fr
         <input type="checkbox" name="lng" value="Espagnol"/>Esp
-        <input type="checkbox" name="lng" value="Anglais" />Ang <br /><br />
+        <input type="checkbox" name="lng" value="Anglais" />Ang
+         <br /><br />
         <label for="splt">Specialite :</label>
         <select name="splt">
-          <option value="IF">Informatique</option>
-          <option value="MG">Management</option>
-          <option value="TL">Telecommunication et logistique</option>
+          <option value="Informatique" > Informatique</option>
+          <option value="Management"> Management</option>
+          <option value="Telecommunication et logistique"> Telecommunication et logistique</option>
           </select><br /><br />
         <label for="adr">Adresse :</label>
         <input type="text" name="adr" size="50px" />

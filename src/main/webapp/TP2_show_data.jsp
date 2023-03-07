@@ -22,9 +22,9 @@ Langues=request.getParameterValues("lng");
  <p align="center">Langues :
  <%
  int i;
- for(i=0;i<Langues.length-1;i++){
+ for(i=0;i<Langues.length;i++){
  out.print(Langues[i]+" - ");
- out.print(Langues[i]);
+
  }
 
   %></p>

@@ -16,11 +16,11 @@ int nb1,nb2;%>
  int nb2=Integer.parseInt(request.getParameter("nb2"));
  int result;
  switch(opt){
-     case '+':out.print("La somme : "+(result=nb1+nb2)) ; break;
-     case '*':out.print(" La multiplication  : "+(result=nb1*nb2)) ;  break;
-     case '-':out.print(" La soustraction : "+(result=nb1-nb2)) ;   break;
-     case '/':out.print("La division : "+(result=nb1/nb2)) ;  ;break;
-     default: out.print("choisis une opération ??");
+     case '+':out.print("La somme : "+nb1+" et "+nb2+" est "+(result=nb1+nb2)) ; break;
+     case '*':out.print(" La multiplication  : "+nb1+" et "+nb2+" est "+(result=nb1*nb2)) ;  break;
+     case '-':out.print(" La soustraction : "+nb1+" et "+nb2+" est "+(result=nb1-nb2)) ;   break;
+     case '/':out.print("La division : "+nb1+" et "+nb2+" est "+(result=nb1/nb2)) ;  ;break;
+     default: out.print("choisis une operation ??"+"<br><a href='TP3.jsp'>RETOUR</a>");
      }
  %>
  </h2>

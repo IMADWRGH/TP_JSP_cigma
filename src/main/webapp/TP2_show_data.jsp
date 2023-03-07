@@ -24,7 +24,6 @@ Langues=request.getParameterValues("lng");
  int i;
  for(i=0;i<Langues.length;i++){
  out.print(Langues[i]+" - ");
-
  }
 
   %></p>

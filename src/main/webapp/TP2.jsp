@@ -21,6 +21,7 @@
         <input type="checkbox" name="lng"  value="Francais"/>Fr
         <input type="checkbox" name="lng" value="Espagnol"/>Esp
         <input type="checkbox" name="lng" value="Anglais" />Ang
+
          <br /><br />
         <label for="splt">Specialite :</label>
         <select name="splt">

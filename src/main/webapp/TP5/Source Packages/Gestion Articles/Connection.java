@@ -1,4 +1,4 @@
-package TP5;
+package Gestion Articles;
 import java.sql.*;
 import com.mysql.jdbc.Connection;
 public class Connexion {

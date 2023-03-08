@@ -1,11 +1,10 @@
-<%@page  import="TP3.jsp"%>
+<%@page  import="TP3_V2.Calculatrice" contentType="text/html" pageEncoding="UTF-8"%>
 <%
 Calculatrice clt;
 char opt=request.getParameter("opt").charAt(0);
  int nb1=Integer.parseInt(request.getParameter("nb1"));
  int nb2=Integer.parseInt(request.getParameter("nb2"));
  clt = new Calculatrice(nb1,nb2);
- int result;
  switch(opt){
      case '+':out.print("La somme : "+nb1+" et "+nb2+" est "+clt.Addition()) ; break;
      case '*':out.print(" La multiplication  : "+nb1+" et "+nb2+" est "+clt.Multiplication) ;  break;

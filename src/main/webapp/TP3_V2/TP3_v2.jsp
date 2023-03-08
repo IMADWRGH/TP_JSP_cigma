@@ -29,7 +29,7 @@
   <body>
   <h1 align="center">Calculatrice simple</h1>
   <div class="main">
-<form action="TP3_show_data.jsp" method="post">
+<form action="TP3_v2_show_data.jsp" method="post">
         <label for="nb1">Premier Nombre :</label>
         <input type="number" name="nb1"  /><br /><br />
         <label for="nb2">Deuxieme Nombre :</label>

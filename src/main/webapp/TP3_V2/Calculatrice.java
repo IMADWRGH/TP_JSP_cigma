@@ -1,7 +1,7 @@
 package TP3_V2;
 
 public class calculatrice {
-    private int nbr1 ,nbr2;
+     int nbr1 ,nbr2;
 
     public calculatrice(int nbr1, int nbr2) {
         this.nbr1 = nbr1;

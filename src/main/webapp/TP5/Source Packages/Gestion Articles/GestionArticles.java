@@ -1,5 +1,7 @@
 package Gestion Articles;
 import java.sql.*;
+import java.sql.ResultSet;
+import java.util.*;
 public class GestionArticles {
     private Connection connection;
     private Statment statment;

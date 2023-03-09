@@ -1,19 +1,19 @@
 package Gestion Articles;
 public class Article{
-private int code_articlr;
+private int code_article;
 private String designation;
 private double prix_uni;
 private int qte_stock;
 
-    public Article(int code_articlr, String designation, double prix_uni,int qte_stock) {
-        this.code_articlr = code_articlr;
+    public Article(int code_article, String designation, double prix_uni,int qte_stock) {
+        this.code_article = code_article;
         this.designation = designation;
         this.prix_uni = prix_uni;
         this.qte_stock=qte_stock;
     }
 
-    public Article(int code_articlr) {
-        this.code_articlr = code_articlr;
+    public Article(int code_article) {
+        this.code_article = code_article;
     }
 
     public Article(String designation, double prix_uni,int qte_stock) {
@@ -25,12 +25,12 @@ private int qte_stock;
     public Article() {
     }
 
-    public int getCode_articlr() {
-        return code_articlr;
+    public int getCode_article() {
+        return code_article;
     }
 
-    public void setCode_articlr(int code_articlr) {
-        this.code_articlr = code_articlr;
+    public void setCode_article(int code_article) {
+        this.code_article = code_article;
     }
 
     public String getDesignation() {
@@ -60,7 +60,7 @@ private int qte_stock;
     @java.lang.Override
     public java.lang.String toString() {
         return "Article{" +
-                "code_articlr=" + code_articlr +
+                "code_article=" + code_article +
                 ", designation='" + designation + '\'' +
                 ", prix_uni=" + prix_uni +
                 ", qte_stock=" + qte_stock +

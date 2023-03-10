@@ -15,7 +15,7 @@ public class GestionArticles {
         }
     }
     public void Ajouter(Article article){
-        sql="insert into article values('"+article.getDesignation+"','"+article.getPrix_uni+"','"+article.getQte_stock+"')"
+        sql="insert into article values('"+article.getDesignation+"','"+article.getPrix_uni+"','"+article.getQte_stock+"')";
         try {
             statment.executeUpdate(sql);
         }catch (SQLException msg){
@@ -23,15 +23,15 @@ public class GestionArticles {
         }
     }
     public void Modifier(Article article){
-        sql=" UPDATE  article  SET  designation ='"+article.getDesignation+"', prix_unitaire='"+article.getPrix_uni+"', qte_stock='"+article.getQte_stock+"' WHERE code_article='"+article.getCode_article"'"
+        sql=" UPDATE  article  SET  designation ='"+article.getDesignation+"', prix_unitaire='"+article.getPrix_uni+"', qte_stock='"+article.getQte_stock+"' WHERE code_article='"+article.getCode_article"'";
         try {
             statment.executeUpdate(sql);
         }catch (SQLException msg){
             System.out.print("Error at query....");
         }
     }
-    public void Supprimer(Article article){
-        sql=" DELETE FROM article WHERE code_article='"+article.getCode_article"'"
+    public void Supprimer(int code ){
+        sql=" DELETE FROM article WHERE code_article='"+code+"'";
         try {
             statment.executeUpdate(sql);
         }catch (SQLException msg){
@@ -47,7 +47,7 @@ public class GestionArticles {
             while (resultSet.next()) {
                 System.out.println(resultSet.getString("code_article")+"  "+resultSet.getString("designation")
                 +" "+resultSet.getString("prix_unitaire")+"  "+resultSet.getString("qte_stock");
-                System.out.println("-------------------");
+                System.out.println("-------------------------");
 
             }
             return List_art;
@@ -66,7 +66,7 @@ public class GestionArticles {
             }
             return List_art;
         }catch (Exception msg){
-            System.out.print("Error at query....");
+            System.out.print("Error at query.....");
         }
         return null;
     }
